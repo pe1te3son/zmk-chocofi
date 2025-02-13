@@ -70,10 +70,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp SQT   &kp COMMA        &kp PERIOD           &kp P              &kp Y        &kp F      &kp G               &kp C                 &kp R            &kp L
-  &kp A     &hml LEFT_ALT O  &hml LEFT_CONTROL E  &hml LEFT_SHIFT U  &kp I        &kp D      &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL T  &hmr LEFT_ALT N  &kp S
-  &kp SEMI  &kp Q            &kp J                &kp K              &kp X        &kp B      &kp M               &kp W                 &kp V            &kp Z
-                                           &mo 3                &kp BACKSPACE      &lt 2 ESC    &lt 1 RET  &kp SPACE           &kp LEFT_ALT
+&kp SQT   &kp COMMA        &kp PERIOD           &kp P              &kp Y  &kp F  &kp G               &kp C                 &kp R            &kp L
+&kp A     &hml LEFT_ALT O  &hml LEFT_CONTROL E  &hml LEFT_SHIFT U  &kp I  &kp D  &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL T  &hmr LEFT_ALT N  &kp S
+&kp SEMI  &kp Q            &kp J                &kp K              &kp X  &kp B  &kp M               &kp W                 &kp V            &kp Z
+                           &kp A                &kp B              &kp C  &kp D  &kp E               &kp F
             >;
         };
 
@@ -87,10 +87,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp N1        &kp N2  &kp N3        &kp N4         &kp N5       &kp N6       &kp N7     &kp N8        &kp N9     &kp N0
-&kp TAB       &trans  &trans        &trans         &tog 2       &kp LEFT     &kp DOWN   &kp UP        &kp RIGHT  &trans
-&kp CAPSLOCK  &trans  &trans        &trans         &trans       &trans       &trans     &trans        &trans     &trans
-                                 &kp LEFT_ALT  &kp BACKSPACE  &lt 2 ESC    &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
+&kp N1        &kp N2  &kp N3        &kp N4         &kp N5     &kp N6       &kp N7     &kp N8        &kp N9     &kp N0
+&kp TAB       &trans  &trans        &trans         &tog 2     &kp LEFT     &kp DOWN   &kp UP        &kp RIGHT  &trans
+&kp CAPSLOCK  &trans  &trans        &trans         &trans     &trans       &trans     &trans        &trans     &trans
+                      &kp LEFT_ALT  &kp BACKSPACE  &lt 2 ESC  &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
             >;
         };
 
@@ -104,23 +104,22 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp EXCL   &kp AT     &kp HASH      &kp DLLR       &kp PRCNT    &kp CARET    &kp AMPS   &kp ASTRK     &kp LPAR    &kp RPAR
-&kp GRAVE  &trans     &trans        &trans         &tog 1       &kp MINUS    &kp EQUAL  &kp LBKT      &kp RBKT    &kp QUESTION
-&kp TILDE  &kp LC(Z)  &kp LC(C)     &kp LC(V)      &kp LC(X)    &kp UNDER    &kp PLUS   &kp LBRC      &pipedance  &backslash
-                                 &kp LEFT_ALT  &kp BACKSPACE  &lt 2 ESC    &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
+&kp EXCL   &kp AT     &kp HASH      &kp DLLR       &kp PRCNT  &kp CARET    &kp AMPS   &kp ASTRK     &kp LPAR    &kp RPAR
+&kp GRAVE  &trans     &trans        &trans         &tog 1     &kp MINUS    &kp EQUAL  &kp LBKT      &kp RBKT    &kp QUESTION
+&kp TILDE  &kp LC(Z)  &kp LC(C)     &kp LC(V)      &kp LC(X)  &kp UNDER    &kp PLUS   &kp LBRC      &pipedance  &backslash
+                      &kp LEFT_ALT  &kp BACKSPACE  &lt 2 ESC  &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
             >;
         };
 
         screen_control {
             label = "Screen";
             bindings = <
-&kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)    &kp LA(NUMBER_6)  &kp LA(N7)    &kp LA(N8)    &kp LA(N9)  &kp LA(N0)
-&trans      &trans      &trans      &trans      &trans        &trans            &trans        &trans        &trans      &trans
-&trans      &trans      &trans      &kp LA(B)   &trans        &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
-                                        &trans      &trans      &trans        &trans            &trans        &tog 4
+&kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &kp LA(NUMBER_6)  &kp LA(N7)    &kp LA(N8)    &kp LA(N9)  &kp LA(N0)
+&trans      &trans      &trans      &trans      &trans      &trans            &trans        &trans        &trans      &trans
+&trans      &trans      &trans      &kp LA(B)   &trans      &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans
+                        &trans      &trans      &trans      &trans            &trans        &tog 4
             >;
         };
-
     };
 
     //  soft_off_wakers {
